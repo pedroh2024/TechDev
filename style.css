@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.hero h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #7300ff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  text-align: center;
+  font-size: 14px;
+}
+
+.servicos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #000000;
+  border-radius: 8px;
+  padding: 20px;
+  width: 200px;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+/*  margin-bottom: 10px; */
+}
+
+.porque {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.porque ul {
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+.imagem-responsiva {
+  width: 400px;
+  margin: 30px auto;
+  display: block;
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap; 
+}
+
+.sobre-img {
+  display: flex;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sobre-texto {
+  max-width: 600px;
+  font-size: 1.0rem;
+  color: #000000;
+}
+
+.sobre-texto h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #7300ff;
+  padding: 25px; 
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-content img {
+  width: 24px;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-sobre {
+    width: 90%;
+  }
+
+  .porque ul {
+    padding-left: 10px;
+  }
+}
