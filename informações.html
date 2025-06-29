@@ -1,17 +1,23 @@
-<html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>TechDev</title>
+  <link rel="icon" type="image/png" href="TechDEv.png">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
 
-<title>TechDev</title>
-<link rel="icon" type="image/png" href="TechDEv.png">
+</head>
 <body>
-<header>
-  <nav>
- <button> <a href="index.html" class="voltar-cardapio">← Voltar ao Cardápio</a> </button> 
-  </nav>
-</header>
 
-<h1>Informações</h1>
+  <header>
+    <nav>
+      <a href="index.html" class="voltar">← Voltar</a>
+    </nav>
+  </header>
 
-<form id="formulario">
+  <h1>Informações</h1>
+
+  <form id="formulario">
     <label for="nome">Nome</label>
     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
@@ -19,120 +25,108 @@
     <input type="text" id="segmento" name="segmento" placeholder="Segmento estabelecimento" required>
 
     <label for="marca">Qual é o nome da sua marca?</label>
-    <input type="text" id="marca" name="marca" placeholder="Nome estabelecimeto" required>
+    <input type="text" id="marca" name="marca" placeholder="Nome estabelecimento" required>
 
     <button type="submit">Enviar</button>
-</form>
+  </form>
 
-<footer>
-    <img src="tech2.png" alt="Minha imagem" class="img-grande">
-</footer>
+  <footer>
+    <img src="tech2.png" alt="Logo TechDev" class="img-grande">
+  </footer>
 
-
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-</html>
+  <script src="script.js"></script>
 </body>
+</html>
+
 <style>
-
-input{
-    border: 1px solid #ddd;
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
-nav a {
-  margin: 0 16px;
+
+body {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Botão de voltar */
+nav {
+  margin-bottom: 20px;
+}
+
+.voltar {
+  background-color: #8000ff;
+  color: white;
+  padding: 10px 20px;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 16px;
-  position: relative;
-  transition: color 0.3s ease;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
-nav a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  height: 2px;
-  width: 0;
-  background-color: #7300ff;
-  transition: width 0.3s ease;
+/* Título */
+h1 {
+  font-size: 24px;
+  color: #8000ff;
+  margin-bottom: 20px;
 }
 
-nav a:hover::after {
+/* Formulário */
+form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   width: 100%;
+  max-width: 400px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #8000ff; 
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+  background-color: white;
+  margin-top: 40px;
+}
+
+.img-grande {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 
 
-    body{
-        font-family: Arial, sans-serif;
-        background-color: #ffffff;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        color: #000000;
-    }
-
-
-    h2{
-        color:#7300ff;
-        margin-top: 40px;
-    }
-
-    h1{
-        color:#7300ff
-    }
-
-    form{
-        max-width: 500px;
-        margin: 40px auto;
-        padding: 30px;
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0, 0.5); 
-    }
-
-    label {
-        display: block;
-        text-align: left;
-        margin-bottom: 5px;
-        font-weight: bold;
-    }
-
-    input {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-
-    button {
-        background-color: #7300ff;
-        color: white;
-        border: none;
-        padding: 14px 20px;
-        font-size: 16px;
-        border-radius: 8px;
-        cursor: pointer;
-        width: 100%;
-        transition: 0.3s ease;
-    }
-
-
-    button:hover {
-        background-color: #5900cc;
-    }
-
-    footer{
-      background-color: #ffffff;
-    }
-    .img-grande{
-        width: 200%;
-        max-width: 200px;
-        height: auto;
-    }
 
 
     @media (max-width: 600px) {
